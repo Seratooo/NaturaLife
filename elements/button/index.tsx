@@ -26,6 +26,35 @@ const Button = forwardRef(({ hover, active, ...props }: ButtonProps, ref) => {
     }),
     variant({ scale: 'buttons' }),
     variant({ prop: 'effect', scale: 'effects' }),
+    variant({
+      variants: {
+        primary: {
+          color: 'white',
+          bg: 'primary',
+          border: 'none',
+          padding: '13px',
+          fontSize: '1.6rem',
+          borderRadius: '20px',
+          boxShadow: '5px 5px 15px 5px rgba(0,0,0,0.10)',
+          cursor: 'pointer',
+          transition: 'all .5s',
+          '&:hover': {
+            color: 'primary',
+            bg: 'black',
+          },
+        },
+        secondary: {
+          color: 'white',
+          bg: 'secondary',
+          border: 'none',
+          padding: '13px',
+          fontSize: '1.6rem',
+          borderRadius: '20px',
+          boxShadow: '5px 5px 15px 5px rgba(0,0,0,0.10)',
+          cursor: 'pointer',
+        },
+      },
+    }),
     compose(
       color,
       space,
