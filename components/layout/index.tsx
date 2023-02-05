@@ -7,7 +7,7 @@ import Header from './header';
 import { LayoutProps } from './layout.types';
 
 const Layout: FC<LayoutProps> = ({ pageTitle = '', children }) => {
-  const title = `${pageTitle} | Template`;
+  const title = `${pageTitle} | NaturaLife`;
 
   return (
     <>
@@ -17,10 +17,30 @@ const Layout: FC<LayoutProps> = ({ pageTitle = '', children }) => {
       </Head>
       <Box minHeight="100vh" display="flex" flexDirection="column">
         <Header />
-        <Box as="main" flex="1">
+        <Box as="main" flex="1" marginTop="3rem">
           {children}
         </Box>
         <Footer />
+      </Box>
+    </>
+  );
+};
+
+export const Layout2: FC<LayoutProps> = ({ pageTitle = '', children }) => {
+  const title = `${pageTitle} | NaturaLife`;
+
+  return (
+    <>
+      <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>{title}</title>
+      </Head>
+      <Box minHeight="100vh" display="flex" flexDirection="column">
+        {/* <Header /> */}
+        <Box as="main" flex="1" marginTop="3rem">
+          {children}
+        </Box>
+        {/* <Footer /> */}
       </Box>
     </>
   );
