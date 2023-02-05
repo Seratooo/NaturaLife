@@ -36,11 +36,9 @@ export const Layout2: FC<LayoutProps> = ({ pageTitle = '', children }) => {
         <title>{title}</title>
       </Head>
       <Box minHeight="100vh" display="flex" flexDirection="column">
-        {/* <Header /> */}
         <Box as="main" flex="1" marginTop="3rem">
           {children}
         </Box>
-        {/* <Footer /> */}
       </Box>
     </>
   );
