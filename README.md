@@ -1,4 +1,4 @@
-# NSDEV React Template
+# NaturaLife React Template
 
 ## Code Style
 
