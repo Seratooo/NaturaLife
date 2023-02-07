@@ -1,6 +1,8 @@
+import Link from 'next/link';
 import { FC } from 'react';
 
 import { Layout } from '../components';
+import { RoutePaths, RoutesEnum } from '../constants/routes';
 import { Box, Button, Input, Typography } from '../elements';
 
 const AboutUs = () => (
@@ -570,9 +572,11 @@ const Home: FC = () => (
             Combinação das maiores conquistas técnincas tradicionas para
             prevenção e erradição de doenças
           </Typography>
-          <Button variant={'primary'} width="25rem" marginTop="15px">
-            Criar Plano de Prevenção
-          </Button>
+          <Link href={RoutePaths[RoutesEnum.Register]}>
+            <Button variant={'primary'} width="25rem" marginTop="15px">
+              Criar Plano de Prevenção
+            </Button>
+          </Link>
         </Box>
         <Box width="40%">
           <img src="/assets/HomeImg.png" alt="Img Home" width="100%" />
