@@ -1,8 +1,11 @@
 # NaturaLife React Template
 ## Description
-NaturaLife - uma plataforma forma híbrida para recomendação de substâncias naturais para prevenção de doenças e promoção da saúde.
+NaturaLife - Template para desenvolvimento de uma plataforma forma híbrida para recomendação de substâncias naturais para prevenção de doenças e promoção da saúde.
 
-![Uploading image.png…]()
+[Saiba mais](https://www.linkedin.com/posts/abubacar-correia_talvez-a-maior-virtude-de-um-programador-activity-7028715365459238913-8Exc?utm_source=share&utm_medium=member_desktop)
+
+![1-Home-NaturaLife ](https://github.com/Seratooo/NaturaLife/assets/72074975/004b0261-0c2b-49ca-894a-34d9558a4706)
+
 
 
 ## Code Style
